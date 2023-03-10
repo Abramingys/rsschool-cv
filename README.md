@@ -1,1 +1,1 @@
-https://Abramingys.github.io/rsschool-cv/cv
+https://Abramingys.github.io/rsschool-cv/
