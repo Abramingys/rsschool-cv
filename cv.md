@@ -22,7 +22,8 @@ I'm 32 years old.I’m looking for a job as an frontend developer in a company w
 - JavaScript
 - Git/GitHub
 - ReactJs
-- Modern Redux с Redux Toolkit.
+- Modern Redux
+- Redux Toolkit.
 - RTK Query
 
 ---
