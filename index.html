@@ -11,7 +11,7 @@
       <header class="cv__header">
         <div class="cv__header-content">
           <img
-            src="./pictures/header/photo_2024-07-07 17.20.46.jpeg"
+            src="./pictures/header/avatart.jpeg"
             alt="photo"
             class="cv__photo"
           />
@@ -89,33 +89,12 @@
         >
           <h2 class="cv__section-title">Code Example</h2>
           <pre class="cv__code"><code>
-// Example of JavaScript code
-import { createContext, useContext, useMemo } from 'react';
-
-import { useTheme } from '../hooks/useTheme';
-
-const ThemeContext = createContext();
-
-export default function ThemeProvider({ children }) {
-  const { theme, setTheme } = useTheme();
-
-  const ThemeContextValue = useMemo(
-    () => ({
-      theme,
-      setTheme,
-    }),
-    [theme, setTheme],
-  );
-
-  return (
-    <ThemeContext.Provider value={ThemeContextValue}>
-      {children}
-    </ThemeContext.Provider>
-  );
-}
-
-export const useThemeContext = () => useContext(ThemeContext);
-          </code></pre>
+            // Example of JavaScript code
+            function greet(name) {
+                return `Hello, ${name}!`;
+            }
+            console.log(greet('World'));
+                        </code></pre>
         </section>
 
         <section id="projects" class="cv__section cv__section--projects">
@@ -151,7 +130,8 @@ export const useThemeContext = () => useContext(ThemeContext);
       <footer class="cv__footer">
         <p>
           Created by
-          <a href="ABRAMOVICH ULADZIMIR">ABRAMOVICH ULADZIMIR</a> - 2024
+          <a href="https://github.com/Abramingys">ABRAMOVICH ULADZIMIR</a> -
+          2024
         </p>
         <p>
           <a href="https://rs.school/courses/javascript-ru"
