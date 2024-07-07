@@ -3,21 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>CV</title>
   </head>
   <body>
     <div class="cv">
       <header class="cv__header">
         <div class="cv__header-content">
-          <img src="profile.jpg" alt="John Doe" class="cv__photo" />
+          <img
+            src="./pictures/header/photo_2024-07-07 17.20.46.jpeg"
+            alt="photo"
+            class="cv__photo"
+          />
           <div>
-            <h1 class="cv__name">John Doe</h1>
-            <p class="cv__title">Software Developer</p>
+            <h1 class="cv__name">ABRAMOVICH ULADZIMIR</h1>
+            <p class="cv__title">FRONTEND DEVELOPER</p>
             <p class="cv__summary">
-              Experienced software developer with a strong background in
-              JavaScript, React, and Node.js. Passionate about building scalable
-              web applications and always eager to learn new technologies.
+              I’m looking for a job as an frontend developer in a company where
+              I can show my knowledge and experience. I prefer active
+              lifestyle.Volley and skiing are among my hobbies.
             </p>
           </div>
         </div>
@@ -44,88 +48,115 @@
           </ul>
         </nav>
       </header>
+      <main>
+        <section id="contacts" class="cv__section cv__section--contacts">
+          <h2 class="cv__section-title">Contacts</h2>
+          <ul class="cv__contacts-list">
+            <li class="cv__contacts-item">
+              Email:
+              <a href="mailto:john.doe@example.com">abramingys@gmail.com</a>
+            </li>
+            <li class="cv__contacts-item">
+              Phone: <a href="tel:+375291925753">+37529-192-57-53</a>
+            </li>
+            <li class="cv__contacts-item">
+              LinkedIn:
+              <a href="https://www.linkedin.com/in/vladimir-abramovich/"
+                >linkedin.com/in/vladimir-abramovich/</a
+              >
+            </li>
+            <li class="cv__contacts-item">
+              GitHub:
+              <a href="https://github.com/Abramingys">github.com/Abramingys</a>
+            </li>
+          </ul>
+        </section>
 
-      <section id="contacts" class="cv__section cv__section--contacts">
-        <h2 class="cv__section-title">Contacts</h2>
-        <ul class="cv__contacts-list">
-          <li class="cv__contacts-item">
-            Email:
-            <a href="mailto:john.doe@example.com">john.doe@example.com</a>
-          </li>
-          <li class="cv__contacts-item">
-            Phone: <a href="tel:+1234567890">+1234567890</a>
-          </li>
-          <li class="cv__contacts-item">
-            LinkedIn:
-            <a href="https://linkedin.com/in/johndoe"
-              >linkedin.com/in/johndoe</a
-            >
-          </li>
-          <li class="cv__contacts-item">
-            GitHub: <a href="https://github.com/johndoe">github.com/johndoe</a>
-          </li>
-        </ul>
-      </section>
+        <section id="skills" class="cv__section cv__section--skills">
+          <h2 class="cv__section-title">Skills</h2>
+          <ul class="cv__skills-list">
+            <li class="cv__skills-item">JavaScript</li>
+            <li class="cv__skills-item">HTML & CSS</li>
+            <li class="cv__skills-item">SASS/SCSS</li>
+            <li class="cv__skills-item">React JS</li>
+            <li class="cv__skills-item">Redux</li>
+          </ul>
+        </section>
 
-      <section id="skills" class="cv__section cv__section--skills">
-        <h2 class="cv__section-title">Skills</h2>
-        <ul class="cv__skills-list">
-          <li class="cv__skills-item">JavaScript</li>
-          <li class="cv__skills-item">HTML & CSS</li>
-          <li class="cv__skills-item">React</li>
-          <li class="cv__skills-item">Node.js</li>
-        </ul>
-      </section>
-
-      <section id="code-example" class="cv__section cv__section--code-example">
-        <h2 class="cv__section-title">Code Example</h2>
-        <pre class="cv__code"><code>
+        <section
+          id="code-example"
+          class="cv__section cv__section--code-example"
+        >
+          <h2 class="cv__section-title">Code Example</h2>
+          <pre class="cv__code"><code>
 // Example of JavaScript code
-function greet(name) {
-  return `Hello, ${name}!`;
+import { createContext, useContext, useMemo } from 'react';
+
+import { useTheme } from '../hooks/useTheme';
+
+const ThemeContext = createContext();
+
+export default function ThemeProvider({ children }) {
+  const { theme, setTheme } = useTheme();
+
+  const ThemeContextValue = useMemo(
+    () => ({
+      theme,
+      setTheme,
+    }),
+    [theme, setTheme],
+  );
+
+  return (
+    <ThemeContext.Provider value={ThemeContextValue}>
+      {children}
+    </ThemeContext.Provider>
+  );
 }
-console.log(greet('World'));
+
+export const useThemeContext = () => useContext(ThemeContext);
           </code></pre>
-      </section>
+        </section>
 
-      <section id="projects" class="cv__section cv__section--projects">
-        <h2 class="cv__section-title">Projects</h2>
-        <ul class="cv__projects-list">
-          <li class="cv__projects-item">
-            <a href="https://github.com/johndoe/project1">Project 1</a> - A
-            simple web application using React.
-          </li>
-          <li class="cv__projects-item">
-            <a href="https://github.com/johndoe/project2">Project 2</a> - A
-            Node.js API for managing tasks.
-          </li>
-          <li class="cv__projects-item">
-            <a href="https://github.com/johndoe/project3">Project 3</a> - A CSS
-            framework for rapid prototyping.
-          </li>
-        </ul>
-      </section>
+        <section id="projects" class="cv__section cv__section--projects">
+          <h2 class="cv__section-title">Projects</h2>
+          <ul class="cv__projects-list">
+            <li class="cv__projects-item">
+              <a href="https://github.com/Abramingys/films">KinoPoisk</a> - A
+              simple web application using React.
+            </li>
+            <li class="cv__projects-item">
+              <a href="https://github.com/Abramingys/react-todo">Todo List</a> -
+              A simple web application using React.
+            </li>
+          </ul>
+        </section>
 
-      <section id="education" class="cv__section cv__section--education">
-        <h2 class="cv__section-title">Education</h2>
-        <p class="cv__education-item">
-          Bachelor of Science in Computer Science, University of Example
-        </p>
-      </section>
+        <section id="education" class="cv__section cv__section--education">
+          <h2 class="cv__section-title">Education</h2>
+          <p class="cv__education-item">
+            Higher education: International Humanitarian - Economic Institute,
+            Minks
+          </p>
+          <p class="cv__education-item">
+            International Relations: a specialist of international relations.
+          </p>
+        </section>
 
-      <section id="language" class="cv__section cv__section--language">
-        <h2 class="cv__section-title">English Proficiency</h2>
-        <p class="cv__language-level">Fluent</p>
-      </section>
-
+        <section id="language" class="cv__section cv__section--language">
+          <h2 class="cv__section-title">English Proficiency</h2>
+          <p class="cv__language-level">Intermediate</p>
+        </section>
+      </main>
       <footer class="cv__footer">
         <p>
-          Created by <a href="https://github.com/johndoe">John Doe</a> - 2024
+          Created by
+          <a href="ABRAMOVICH ULADZIMIR">ABRAMOVICH ULADZIMIR</a> - 2024
         </p>
         <p>
-          <a href="https://example.com/course"
+          <a href="https://rs.school/courses/javascript-ru"
             ><img
-              src="course-logo.png"
+              src="./pictures/footer/rs-school-logo.svg"
               alt="Course Logo"
               class="cv__course-logo"
           /></a>
