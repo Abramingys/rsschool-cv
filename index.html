@@ -3,8 +3,145 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>CV</title>
   </head>
-  <body></body>
+  <body>
+    <div class="cv">
+      <header class="cv__header">
+        <div class="cv__header-content">
+          <img
+            src="./pictures/header/avatart.jpeg"
+            alt="photo"
+            class="cv__photo"
+          />
+          <div>
+            <h1 class="cv__name">ABRAMOVICH ULADZIMIR</h1>
+            <p class="cv__title">FRONTEND DEVELOPER</p>
+            <p class="cv__summary">
+              I’m looking for a job as an frontend developer in a company where
+              I can show my knowledge and experience. I prefer active
+              lifestyle.Volley and skiing are among my hobbies.
+            </p>
+          </div>
+        </div>
+        <nav class="cv__nav">
+          <ul class="cv__nav-list">
+            <li class="cv__nav-item">
+              <a href="#contacts" class="cv__nav-link">Contacts</a>
+            </li>
+            <li class="cv__nav-item">
+              <a href="#skills" class="cv__nav-link">Skills</a>
+            </li>
+            <li class="cv__nav-item">
+              <a href="#code-example" class="cv__nav-link">Code Example</a>
+            </li>
+            <li class="cv__nav-item">
+              <a href="#projects" class="cv__nav-link">Projects</a>
+            </li>
+            <li class="cv__nav-item">
+              <a href="#education" class="cv__nav-link">Education</a>
+            </li>
+            <li class="cv__nav-item">
+              <a href="#language" class="cv__nav-link">Language</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="contacts" class="cv__section cv__section--contacts">
+          <h2 class="cv__section-title">Contacts</h2>
+          <ul class="cv__contacts-list">
+            <li class="cv__contacts-item">
+              Email:
+              <a href="mailto:john.doe@example.com">abramingys@gmail.com</a>
+            </li>
+            <li class="cv__contacts-item">
+              Phone: <a href="tel:+375291925753">+37529-192-57-53</a>
+            </li>
+            <li class="cv__contacts-item">
+              LinkedIn:
+              <a href="https://www.linkedin.com/in/vladimir-abramovich/"
+                >linkedin.com/in/vladimir-abramovich/</a
+              >
+            </li>
+            <li class="cv__contacts-item">
+              GitHub:
+              <a href="https://github.com/Abramingys">github.com/Abramingys</a>
+            </li>
+          </ul>
+        </section>
+
+        <section id="skills" class="cv__section cv__section--skills">
+          <h2 class="cv__section-title">Skills</h2>
+          <ul class="cv__skills-list">
+            <li class="cv__skills-item">JavaScript</li>
+            <li class="cv__skills-item">HTML & CSS</li>
+            <li class="cv__skills-item">SASS/SCSS</li>
+            <li class="cv__skills-item">React JS</li>
+            <li class="cv__skills-item">Redux</li>
+          </ul>
+        </section>
+
+        <section
+          id="code-example"
+          class="cv__section cv__section--code-example"
+        >
+          <h2 class="cv__section-title">Code Example</h2>
+          <pre class="cv__code"><code>
+            // Example of JavaScript code
+            function greet(name) {
+                return `Hello, ${name}!`;
+            }
+            console.log(greet('World'));
+                        </code></pre>
+        </section>
+
+        <section id="projects" class="cv__section cv__section--projects">
+          <h2 class="cv__section-title">Projects</h2>
+          <ul class="cv__projects-list">
+            <li class="cv__projects-item">
+              <a href="https://github.com/Abramingys/films">KinoPoisk</a> - A
+              simple web application using React.
+            </li>
+            <li class="cv__projects-item">
+              <a href="https://github.com/Abramingys/react-todo">Todo List</a> -
+              A simple web application using React.
+            </li>
+          </ul>
+        </section>
+
+        <section id="education" class="cv__section cv__section--education">
+          <h2 class="cv__section-title">Education</h2>
+          <p class="cv__education-item">
+            Higher education: International Humanitarian - Economic Institute,
+            Minks
+          </p>
+          <p class="cv__education-item">
+            International Relations: a specialist of international relations.
+          </p>
+        </section>
+
+        <section id="language" class="cv__section cv__section--language">
+          <h2 class="cv__section-title">English Proficiency</h2>
+          <p class="cv__language-level">Intermediate</p>
+        </section>
+      </main>
+      <footer class="cv__footer">
+        <p>
+          Created by
+          <a href="https://github.com/Abramingys">ABRAMOVICH ULADZIMIR</a> -
+          2024
+        </p>
+        <p>
+          <a href="https://rs.school/courses/javascript-ru"
+            ><img
+              src="./pictures/footer/rs-school-logo.svg"
+              alt="Course Logo"
+              class="cv__course-logo"
+          /></a>
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>
