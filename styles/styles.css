@@ -1,0 +1,194 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.cv {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border-left: 8px solid #4caf50;
+}
+
+.cv__header {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  border-radius: 8px 8px 0 0;
+}
+
+.cv__header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cv__photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cv__name {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.cv__title {
+  font-size: 1.2em;
+  color: #ddd;
+}
+
+.cv__summary {
+  font-size: 1em;
+  color: #eee;
+  margin-top: 10px;
+}
+
+.cv__nav {
+  margin-top: 20px;
+}
+
+.cv__nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.cv__nav-item {
+}
+
+.cv__nav-link {
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cv__nav-link:hover {
+  background-color: #555;
+}
+
+.cv__section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.cv__section--contacts {
+  background-color: #e1f5fe;
+}
+
+.cv__section--skills {
+  background-color: #f1f8e9;
+}
+
+.cv__section--code-example {
+  background-color: #ffebee;
+}
+
+.cv__section--projects {
+  background-color: #fff8e1;
+}
+
+.cv__section--education {
+  background-color: #ede7f6;
+}
+
+.cv__section--language {
+  background-color: #e8f5e9;
+}
+
+.cv__section-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #4caf50;
+  display: inline-block;
+  color: #333;
+}
+
+.cv__contacts-list,
+.cv__skills-list,
+.cv__projects-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cv__contacts-item,
+.cv__skills-item,
+.cv__projects-item,
+.cv__education-item,
+.cv__language-level {
+  margin-bottom: 10px;
+}
+
+.cv__contacts-item a,
+.cv__projects-item a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.cv__contacts-item a:hover,
+.cv__projects-item a:hover {
+  text-decoration: underline;
+}
+
+.cv__skills-item {
+  background-color: #f4f4f4;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 4px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.cv__code {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+.cv__footer {
+  margin-top: 40px;
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+}
+
+.cv__footer p {
+  margin: 5px 0;
+}
+
+.cv__footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.cv__footer a:hover {
+  text-decoration: underline;
+}
+
+.cv__course-logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 8px;
+}
